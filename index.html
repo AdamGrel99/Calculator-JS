@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kalkulator Matematyczny</h1>
+  <div class="whole-calculator">
+    <div data-simplebar class="history-box">
+      <div class="last-calculations">
+        Last Calculations
+      </div>
+      <button class="clear-history-button">Clear</button>
+      <hr style="width: 80%; color: rgb(220, 210, 210);">
+      <div class="history-lists">
+        
+      </div>
+    </div>
+    <div class="calculator-box">
+      <div class="input-equasion-box">
+        <div class="history-screen">
+          <div class="history-input"></div>
+          <div class="math-input"></div>
+        </div>
+        <div class="actual-input"></div>
+      </div>
+      <div class="operation-grid">
+        <button class="operation-button action">sin</button>
+        <button class="operation-button action">cos</button>
+        <button class="operation-button action">tan</button>
+        <button class="operation-button action">cot</button>
+        <button class="operation-button clear" >C</button>
+        <button class="operation-button delete">&#9003;</button>
+      </div>
+
+      <div class="operation-grid">
+        <button class="operation-button action" >log</button>
+        <button class="operation-button action" >mod</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">7</button>
+        <button class="operation-button number" style="background-color: rgba(255, 255, 255, 0.2)">8</button>
+        <button class="operation-button number" style="background-color: rgba(255, 255, 255, 0.2)">9</button>
+        <button class="operation-button action" >/</button>
+      </div>
+
+      <div class="operation-grid">
+        <button class="operation-button action" >^</button>
+        <button class="operation-button action" >!</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">4</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">5</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">6</button>
+        <button class="operation-button action" >*</button>
+      </div>
+
+      <div class="operation-grid">
+        <button class="operation-button action" >&#8730;</button>
+        <button class="operation-button action" >&#8731;</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">1</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">2</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">3</button>
+        <button class="operation-button action" >-</button>
+      </div>
+
+      <div class="operation-grid">
+        <button class="operation-button number" >&#8455;</button>
+        <button class="operation-button number" >&pi;</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">0</button>
+        <button class="operation-button number" style="background-color: rgba(255, 250, 250, 0.2)">.</button>
+        <button class="operation-button equals" style="background-color: rgba(255, 250, 250, 0.2)">=</button>
+        <button class="operation-button action" >+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="maths.js"></script>
+  <script src="dom.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

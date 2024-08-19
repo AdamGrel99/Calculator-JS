@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(235, 110, 235), rgb(200, 50, 200), rgb(180, 10, 180), rgb(150, 0, 150), rgb(110, 0, 110), rgb(70, 0, 70), rgb(50, 0, 50), rgb(30, 0, 30));
+}
+
+h1 {
+  color: rgb(220, 210, 210);
+  text-align: center;
+  margin: 90px;
+}
+
+.whole-calculator{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 330px;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clear-history-button{
+  width: 50%;
+  height: 25px;
+  margin: 0px auto;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(220, 210, 210);
+  border-radius: 20px;
+  display: none;
+}
+
+.element-in-history-list{
+  color:  rgb(220, 210, 210);
+  margin: 0px 3px 8px 3px;
+  font-style: italic;
+}
+
+.calculator-box{
+  display: flex; 
+  flex-direction: column;
+}
+
+.operation-grid{
+  display: flex;
+  flex-direction: row;
+}
+
+.operation-button{
+  height: 50px;
+  width: 60px;
+  margin-top: 2px;
+  margin-right: 2px;
+  color: rgb(220, 210, 210);
+  cursor: pointer;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.input-equasion-box{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  height: 70px;
+  color: rgb(220, 210, 210);
+  font-size: 30px;
+  text-align: right;
+}
+
+.history-screen{
+  display: flex;
+  justify-content: right;
+  height: 40%;
+}
+
+.history-input, .math-input{
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+  margin: 5px;
+}
+
+.actual-input{
+  font-size: 35px;
+  margin: 5px;
+}
+
+.last-calculations{
+  color: rgb(220, 210, 210);
+  margin: 5px;
+  font-weight: bold;
+}
+
+button:hover{
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.clear-history-button.active{
+  display: block;
+}
